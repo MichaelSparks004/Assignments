@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/breg\ back2.webp);
+}
+
+
+
+/******* Login Form *******/
+
+.log-container {
+    max-width: 700px;
+    width: 100%;
+    background: inherit;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 26);
+    
+}
+
+.log-container > .login {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.log-container .login::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    height: 30px;
+}
+
+.log-container > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login { 
+    background-color: inherit;
+    margin: auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+form > p {
+    margin-bottom: 15px;    
+    width: calc(100% / 2 - 20px);
+}
+
+
+p > .name-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.name-details > input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+} 
+
+p > .input-box {
+    font-weight: 900;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.input-box > input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+p > input:focus,
+p > input:valid {
+    border-color: deepskyblue;
+}
+
+p > label {
+    /* font-size: 15px;
+    font-weight: 500;  */
+    color: gray;
+    line-height: 2.0em;
+
+}
+
+.usnme {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 84px;
+    color: deepskyblue;
+}
+
+.psswd {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 84px;
+    color: deepskyblue;
+}
+
+#rempass {
+    margin-left: -28px;
+    margin-top: 1px;
+    width: 80px;
+}
+
+p > button {
+    height: 45px;
+    margin: 45px 0;
+
+}
+
+.submit-buttn > .login-btn{
+    height: 8vh;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 12px 120px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: deepskyblue;
+}
+
+.submit-buttn > .login-btn:hover {
+    color: gold;
+}
+
+
+.reminder {
+    color: gray;
+    align-items: center;
+    border: none; 
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.reminder > a {
+    align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: deepskyblue;
+    margin-top: -80px;
+}
+
+.reminder > a:hover {
+    color: gold;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+button > a:hover {
+    color: gold;
+}
