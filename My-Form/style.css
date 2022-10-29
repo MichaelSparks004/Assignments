@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/breg\ back2.webp);
+}
+
+
+/******* Registration Form *******/
+
+.reg-container {
+    max-width: 700px;
+    background: inherit;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 26);
+}
+
+.reg-container > .registration {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    margin-top: 60px; 
+    padding-top: 2.5em;
+}
+
+.reg-container .registration::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+}
+
+.reg-container > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0 12px 0;
+}
+
+.registration {
+    margin: auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+form > p {
+    margin-bottom: 15px;    
+    width: calc(100% / 2 - 20px);
+}
+
+
+p > .name-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.name-details > input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+p > .user-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details > input {
+    display: block;
+    height: 43px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+p > .gender-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.gender-details > select {
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+p > .input-box {
+    font-weight: 900;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.input-box > input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+p > input:focus,
+p > input:valid {
+    border-color: deepskyblue;
+}
+
+p > label {
+    font-size: 15px;
+    font-weight: 500; 
+    color: grey;
+    line-height: 2.0em;
+}
+
+#terms {
+    margin-left: -28px;
+    margin-top: 1px;
+    width: 80px;
+}
+
+.submit-buttn .register-btn {
+    cursor: pointer;
+    padding: 12px 120px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: white;
+    background: deepskyblue;
+    text-decoration: none;
+    margin-right: 7em;
+    width: 100%;
+}
+
+.submit-buttn .register-btn:hover {
+    color: gold;
+}
+
+.reminder {
+    color: gray;
+    align-items: center;
+    border: none; 
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.reminder > .lin {
+    align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: deepskyblue;
+    margin-top: -80px;
+}
+
+.reminder > .lin:hover {
+    color: gold;
+}
+
